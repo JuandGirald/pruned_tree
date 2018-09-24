@@ -1,4 +1,4 @@
-# Rpunning Tree
+# Prunning Tree
 
 ## Installing
 
