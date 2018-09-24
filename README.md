@@ -1,24 +1,49 @@
-# README
+# Rpunning Tree
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Installing
 
-Things you may want to cover:
+Inside your project, run this command:
 
-* Ruby version
+```
+Bundle install
+```
+## Database
 
-* System dependencies
+run:
 
-* Configuration
+```
+rake db:setup && rake db:migrate
+```
 
-* Database creation
+then run:
 
-* Database initialization
+```
+rails server
+```
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Running the tests
 
-* Deployment instructions
 
-* ...
+run the tests!
+
+```
+rspec
+```
+
+## Endpoints
+
+Get the prunned tree:
+```
+/tree/<name>
+params: indicator_ids[]
+
+ex:
+
+http://localhost:3000/tree/input?indicator_ids[]=50&indicator_ids[]=2&indicator_ids[]=15
+```
+
+## Authors
+
+* **Juan David Giraldo** - *Initial work* - [JuanGiraldo](https://github.com/JuandGirald)
+
